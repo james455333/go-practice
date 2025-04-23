@@ -1,0 +1,29 @@
+# .editorconfig
+
+root = true
+
+# 通用規則：所有檔案
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Golang 檔案規則
+[*.go]
+indent_style = tab
+indent_size = 4
+
+# Markdown / 文檔類型，避免破壞格式
+[*.md]
+trim_trailing_whitespace = false
+
+# YAML / JSON 配置檔案
+[*.{yml,yaml,json}]
+indent_style = space
+indent_size = 2
+
+# Shell script
+[*.sh]
+indent_style = space
+indent_size = 4
