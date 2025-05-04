@@ -27,3 +27,5 @@ func (stringService) Count(s string) int {
 }
 
 var EmptyErr = fmt.Errorf("empty string")
+
+type ServiceMiddleware func(StringService) StringService
